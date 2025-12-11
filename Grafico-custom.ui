@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>janela</class>
+ <widget class="QMainWindow" name="janela">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1470</width>
+    <height>924</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Grafico costumizado app</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>1431</width>
+      <height>881</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 255);</string>
+    </property>
+    <widget class="QSlider" name="controle">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>110</y>
+       <width>71</width>
+       <height>491</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>71</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="tickPosition">
+      <enum>QSlider::NoTicks</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>30</y>
+       <width>1091</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;gerador grafico tempo real&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="comecar1">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>660</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>começar</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="para">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>660</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>parar</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="B_atualizar">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>770</y>
+       <width>81</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>atualizar</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>740</y>
+       <width>221</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;atualização por millessegundos&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="linha">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>770</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="graficozin" native="true">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>100</y>
+       <width>1091</width>
+       <height>541</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QDial" name="dial">
+     <property name="geometry">
+      <rect>
+       <x>1310</x>
+       <y>370</y>
+       <width>101</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="maximum">
+      <number>100</number>
+     </property>
+     <property name="invertedAppearance">
+      <bool>false</bool>
+     </property>
+     <property name="invertedControls">
+      <bool>false</bool>
+     </property>
+     <property name="wrapping">
+      <bool>false</bool>
+     </property>
+     <property name="notchesVisible">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_v">
+     <property name="geometry">
+      <rect>
+       <x>860</x>
+       <y>730</y>
+       <width>111</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Valor atual =&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="line_va">
+     <property name="geometry">
+      <rect>
+       <x>860</x>
+       <y>750</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>ponha um valor aqui</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bot_mudar">
+     <property name="geometry">
+      <rect>
+       <x>860</x>
+       <y>780</y>
+       <width>111</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Mudar</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_ad10">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>760</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>adicionar 10</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_ad1">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>740</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>adicionar 1</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_ti10">
+     <property name="geometry">
+      <rect>
+       <x>990</x>
+       <y>760</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>tirar 10</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_ti1">
+     <property name="geometry">
+      <rect>
+       <x>990</x>
+       <y>740</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>tirar 1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>730</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Pontos no grafico&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="line_nu">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>760</y>
+       <width>161</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="placeholderText">
+      <string>ponha a quantidade de pontos </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bo_colocar">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>780</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Colocar</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Reinicia">
+     <property name="geometry">
+      <rect>
+       <x>1150</x>
+       <y>660</y>
+       <width>75</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Reiniciar</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="pontos">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>660</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Pontos aparecendo</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="combo_tipo">
+     <property name="geometry">
+      <rect>
+       <x>1140</x>
+       <y>750</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>quantidade pontos</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Tempo em segundos</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Tempo em milesegundos</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>1140</x>
+       <y>730</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Eixo x é &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1470</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSalvar">
+    <property name="title">
+     <string>Salvar</string>
+    </property>
+    <addaction name="actionImagen_Grafico"/>
+   </widget>
+   <addaction name="menuSalvar"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionImagen_Grafico">
+   <property name="text">
+    <string>Imagen Grafico</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>controle</tabstop>
+  <tabstop>comecar1</tabstop>
+  <tabstop>B_atualizar</tabstop>
+  <tabstop>linha</tabstop>
+  <tabstop>para</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
